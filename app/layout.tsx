@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-const heading = Cormorant_Garamond({ 
+const heading = Playfair_Display({ 
   subsets: ["latin"], 
-  weight: ['300', '400', '500', '600', '700'],
-  variable: "--font-heading" 
+  variable: "--font-heading",
+  weight: ["400", "700", "900"]
 });
+
 const body = Inter({ 
   subsets: ["latin"], 
   variable: "--font-body" 
 });
 
 export const metadata: Metadata = {
-  title: "Aso Ebi Couture | Bespoke African Fashion",
-  description: "Crafting Your Signature Look for Every Celebration with timeless elegance and luxury.",
+  title: "Aso Ebi Couture | Tradition Meets Modern Elegance",
+  description: "Curating bespoke, high-end traditional and contemporary African attire for unforgettable moments.",
 };
 
 export default function RootLayout({

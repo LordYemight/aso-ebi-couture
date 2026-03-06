@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-body)"],
-        heading: ["var(--font-heading)"],
+        heading: ['var(--font-heading)'],
+        sans: ['var(--font-body)'],
       },
       colors: {
-        primary: "#002D62",
+        primary: "#002147",
         secondary: "#FFD700",
-        accent: "#A52A2A",
+        accent: "#A4001F",
       },
     },
   },
