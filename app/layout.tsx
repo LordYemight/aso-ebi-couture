@@ -1,31 +1,27 @@
-import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
-import "./globals.css";
+import { Playfair_Display, Inter } from 'next/font/google';
+import './globals.css';
 
-const heading = Playfair_Display({ 
-  subsets: ["latin"], 
-  variable: "--font-heading",
-  weight: ["400", "700", "900"]
+const headingFont = Playfair_Display({ 
+  subsets: ['latin'], 
+  variable: '--font-heading',
+  weight: ['400', '700', '900']
 });
 
-const body = Inter({ 
-  subsets: ["latin"], 
-  variable: "--font-body" 
+const bodyFont = Inter({ 
+  subsets: ['latin'], 
+  variable: '--font-body',
+  weight: ['300', '400', '500', '700']
 });
 
-export const metadata: Metadata = {
-  title: "Aso Ebi Couture | Tradition Meets Modern Elegance",
-  description: "Curating bespoke, high-end traditional and contemporary African attire for unforgettable moments.",
+export const metadata = {
+  title: 'Aso Ebi Couture | Crafting Timeless Elegance',
+  description: 'Bespoke, high-end traditional and modern African attire blending rich heritage with contemporary silhouettes.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${heading.variable} ${body.variable} font-sans antialiased`}>
+      <body className={`${headingFont.variable} ${bodyFont.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>
